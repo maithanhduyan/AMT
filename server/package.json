@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "AMT Server using Nodejs and  Express framework",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon index",
     "test": "test"
   },
   "repository": {
@@ -20,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/maithanhduyan/AMT/issues"
   },
-  "homepage": "https://github.com/maithanhduyan/AMT#readme"
+  "homepage": "https://github.com/maithanhduyan/AMT#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
