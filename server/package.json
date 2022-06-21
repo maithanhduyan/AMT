@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "AMT Server using Nodejs and  Express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maithanhduyan/AMT.git"
+  },
+  "keywords": [
+    "Assets",
+    "Management",
+    "Tools"
+  ],
+  "author": "Mai Thành Duy An",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maithanhduyan/AMT/issues"
+  },
+  "homepage": "https://github.com/maithanhduyan/AMT#readme"
+}
