@@ -1,5 +1,4 @@
 import express from "express";
-
 import {
   getAllProducts,
   createProduct,
@@ -9,7 +8,9 @@ import {
 } from "../controllers/ProductController.js";
 
 const router = express.Router();
+// AUTH -----------------------------
 
+// PRODUCT-----------------------------
 router.get("/", getAllProducts);
 router.get("/:id", getProductById);
 router.post("/", createProduct);

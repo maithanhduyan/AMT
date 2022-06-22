@@ -1,4 +1,5 @@
 import express from "express";
+import compression from "compression";
 import db from "./config/database.js";
 import productRoutes from "./routes/index.js";
 import cors from "cors";
@@ -12,6 +13,7 @@ try {
   console.error("Connection error:", error);
 }
 
+// app.use(compression());
 app.use(cors());
 app.use(express.json());
 app.use("/products", productRoutes);
