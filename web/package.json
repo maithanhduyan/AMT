@@ -1,7 +1,12 @@
 {
   "name": "web",
-  "version": "0.1.0",
+  "description": "AMT Web App using ReactJS",
+  "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maithanhduyan/AMT.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

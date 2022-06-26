@@ -9,10 +9,14 @@ const AddProduct = () => {
 
   const saveProduct = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/products", {
+    await axios.post("http://localhost:5000/api/products", {
       title: title,
       price: price,
     });
+    navigate("/");
+  };
+
+  const back = async (e) => {
     navigate("/");
   };
 
@@ -42,6 +46,9 @@ const AddProduct = () => {
         </div>
 
         <div className="field">
+          <button className="button is-primary" onClick={back}>
+            Back
+          </button>
           <button className="button is-primary">Save</button>
         </div>
       </form>

@@ -11,7 +11,7 @@ const EditProduct = () => {
 
   const updateProduct = async (e) => {
     e.preventDefault();
-    await axios.patch(`http://localhost:5000/products/${id}`, {
+    await axios.patch(`http://localhost:5000/api/products/${id}`, {
       title: title,
       price: price,
     });
@@ -23,7 +23,9 @@ const EditProduct = () => {
   }, []);
 
   const getProductById = async () => {
-    const response = await axios.get(`http://localhost:5000/products/${id}`);
+    const response = await axios.get(
+      `http://localhost:5000/api/products/${id}`
+    );
     setTitle(response.data.title);
     setPrice(response.data.price);
   };
@@ -54,6 +56,7 @@ const EditProduct = () => {
         </div>
 
         <div className="field">
+          <button className="button is-primary">Back</button>
           <button className="button is-primary">Update</button>
         </div>
       </form>
